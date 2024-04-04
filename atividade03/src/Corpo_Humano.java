@@ -4,6 +4,7 @@ public class Corpo_Humano {
     private double densidade;
     private double altura;
     private double imc;
+    
 
     public Corpo_Humano(){
 

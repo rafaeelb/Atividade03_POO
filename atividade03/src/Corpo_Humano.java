@@ -53,7 +53,4 @@ public class Corpo_Humano {
         return altura;
     }
 
-    public void Calcular_IMC(double massa,  double altura){
-        imc = massa/altura/altura;
-    }
 }

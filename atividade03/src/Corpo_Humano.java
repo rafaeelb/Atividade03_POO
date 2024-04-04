@@ -1,58 +1,58 @@
 public class Corpo_Humano {
-    private float massa;
-    private float volume;
-    private float densidade;
-    private float altura;
-    private float imc;
+    private double massa;
+    private double volume;
+    private double densidade;
+    private double altura;
+    private double imc;
 
     public Corpo_Humano(){
 
     }
     
-    public Corpo_Humano(float massa, float volume, float altura){
+    public Corpo_Humano(double massa, double volume, double altura){
         this.massa = massa;
         this.volume = volume;
         densidade = massa/volume;
         this.altura = altura;
-        imc = massa/altura * 2;
+        imc = massa/altura/altura;
     }
 
-    public void setMassa(float massa){
+    public void setMassa(double massa){
         this.massa = massa;
         densidade = massa/volume;
-        imc=massa/altura*2;
+        imc=massa/altura/altura;
     }
 
-    public void setVolume(float volume){
+    public void setVolume(double volume){
         this.volume = volume;
         densidade = massa/volume;
     }
 
-    public void setAltura(float altura){
+    public void setAltura(double altura){
         this.altura= altura;
-        imc=massa/altura*2;
+        imc=massa/altura/altura;
     }
 
-    public float getImc(){
+    public double getImc(){
         return imc;
     }
-    public float getMassa(){
+    public double getMassa(){
         return massa;
     }
 
-    public float getVolume(){
+    public double getVolume(){
         return volume;
     }
 
-    public float getDensidade(){
+    public double getDensidade(){
         return densidade;
     }
 
-    public float getAltura(){
+    public double getAltura(){
         return altura;
     }
 
-    public void Calcular_IMC(float massa,  float altura){
-        imc = massa/altura*2;
+    public void Calcular_IMC(double massa,  double altura){
+        imc = massa/altura/altura;
     }
 }

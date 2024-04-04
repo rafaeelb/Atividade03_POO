@@ -4,10 +4,9 @@ public class Corpo_Humano {
     private double densidade;
     private double altura;
     private double imc;
-    
 
     public Corpo_Humano(){
-
+        
     }
     
     public Corpo_Humano(double massa, double volume, double altura){
@@ -21,7 +20,7 @@ public class Corpo_Humano {
     public void setMassa(double massa){
         this.massa = massa;
         densidade = massa/volume;
-        imc=massa/altura/altura;
+        // imc=massa/altura/altura;
     }
 
     public void setVolume(double volume){
@@ -31,7 +30,7 @@ public class Corpo_Humano {
 
     public void setAltura(double altura){
         this.altura= altura;
-        imc=massa/altura/altura;
+        // imc=massa/altura/altura;
     }
 
     public double getImc(){
@@ -52,5 +51,4 @@ public class Corpo_Humano {
     public double getAltura(){
         return altura;
     }
-
 }

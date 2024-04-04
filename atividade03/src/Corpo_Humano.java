@@ -8,7 +8,7 @@ public class Corpo_Humano {
     public Corpo_Humano(){
 
     }
-
+    
     public Corpo_Humano(float massa, float volume, float altura){
         this.massa = massa;
         this.volume = volume;
@@ -28,7 +28,14 @@ public class Corpo_Humano {
         densidade = massa/volume;
     }
 
+    public void setAltura(float altura){
+        this.altura= altura;
+        imc=massa/altura*2;
+    }
 
+    public float getImc(){
+        return imc;
+    }
     public float getMassa(){
         return massa;
     }
@@ -41,17 +48,11 @@ public class Corpo_Humano {
         return densidade;
     }
 
-    public void setAltura(float altura){
-        this.altura= altura;
-        imc=massa/altura*2;
-    }
     public float getAltura(){
         return altura;
     }
 
     public void Calcular_IMC(float massa,  float altura){
-        
         imc = massa/altura*2;
     }
-
 }
